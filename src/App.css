@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #fafbfd;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: "Poppins", sans-serif;
+}
+
+.intro-img {
+  background-image: url("../src/assets/2nobg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.5s ease;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.navbar.scrolled {
+  background-color: #4f6ab7;
+}
+
+.nav-logo {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 90px;
+}
+
+.nav-item {
+  margin-left: 35px;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #716dff;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: center;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #dddddd;
+  font-size: 25px;
+}
+
+.myphoto {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-top-right-radius: 15%;
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.tool-icon {
+  width: 70px; /* Adjust the width and height as needed */
+  height: 70px;
+  transition: fill 0.2s; /* Add a smooth color transition on hover */
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  /* z-index: 1; */
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+.project-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2px 2px;
+  padding: 60px 0px;
+  max-width: 70%;
+  margin: 0 auto;
+  border-radius: 40px;
+  margin-top: 2rem;
+}
+
+.projectImg {
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.project__details {
+  color: #888888;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+/* ---------------contact------------*/
+
+.contact__container {
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  column-gap: 6rem;
+  padding-bottom: 3rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.contact__title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: var(--mb-1-5);
+}
+
+.contact__info {
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 300px;
+}
+
+.contact__card {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.contact__card-title,
+.contact__card-data {
+  font-size: var(--small-font-size);
+}
+
+.contact__card-title {
+  font-weight: var(--font-medium);
+}
+
+.contact__card-data {
+  display: block;
+  margin-bottom: var(--mb-0-75);
+}
+
+.contact__form {
+  width: 260px;
+}
+
+.contact__form-div {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: -1rem;
+  height: 5rem;
+}
+
+.contact__form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: none;
+  color: var(--text-color);
+  outline: none;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  z-index: 1;
+}
+
+.contact__form-tag {
+  position: absolute;
+  top: -1.6rem;
+  left: 1.25rem;
+  font-size: var(--small-font-size);
+  padding: 0.25rem;
+  background-color: var(--body-color);
+  z-index: 10;
+}
+
+.contact__form-area {
+  height: 14rem;
+}
+
+.contact__form-area textarea {
+  resize: none;
+}
+
+/*=========================== github =============================*/
+
+.btn__git {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-left: 20px;
+  margin-top: -9px;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.btn__git:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.btn__git:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+/*=========================== BREAKPOINT =============================*/
+/* For large devices */
+
+@media screen and (max-width: 992px) {
+  .contact__container {
+    column-gap: 3rem;
+  }
+  .projectImg {
+    height: 180px;
+    width: 250px;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .intro-img {
+    background-size: cover 50%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: 0; /* Change left to 0 to start from the left edge */
+    top: -100%; /* Start off-screen from the top */
+    flex-direction: column;
+    background-color: #f7f7f7; /* Change background color on hover */
+    width: 100%;
+    height: 100%; /* Make the menu full-screen */
+    text-align: center;
+    padding-left: 10px;
+    transition: top 0.4s; /* Transition the top property */
+  }
+
+  /* Change the text color */
+  .nav-link {
+    color: #9ba4b5;
+  }
+
+  /* Change the hover color */
+  .nav-link:hover {
+    color: #5c469c;
+  }
+
+  .nav-menu.active {
+    top: 0;
+    padding-top: 50px;
+
+    /* Slide down from the top when active */
+  }
+
+  .nav-item {
+    margin: 2rem 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu.active {
+    left: 0;
+    text-align: center;
+    margin-right: 30px;
+  }
+
+  .txtandlogo {
+    flex-direction: column;
+    /* background-color: gray; */
+    margin-top: 28px;
+  }
+
+  .intoheading {
+    /* background-color: #5c469c; */
+    font-size: 2.3rem !important;
+    gap: 5px;
+    margin-top: -15px;
+  }
+
+  .introp {
+    /* background-color: chocolate; */
+    font-size: 0.7rem; /* Adjust the font size for smaller screens */
+    margin-top: 0;
+  }
+
+  .logodiv {
+    /* background-color: gold; */
+    text-align: center;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logoimg {
+    width: 80%;
+    max-width: 600px;
+  }
+
+  .aboutme {
+    margin-top: 1rem !important;
+  }
+
+  .aboutmediv {
+    padding-top: 100px;
+  }
+
+  .myphoto {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .about-me-title,
+  .about-me-p {
+    text-align: center;
+  }
+
+  .about-me-title {
+    font-size: 1.5rem;
+  }
+
+  .about-me-p {
+    font-size: 1;
+  }
+
+  .icon-parent-div {
+    gap: "2rem" !important;
+    padding: 0 !important;
+    margin: 25px;
+  }
+
+  .projectImg {
+    height: 150px;
+    width: 200px;
+  }
+
+  .contact__container {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .contact__info {
+    justify-content: center;
+  }
+
+  .contact__form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .icon-parent-div {
+    margin: 5px;
+  }
+  .projectImg {
+    height: 150px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .icon-parent-div {
+    margin: 25px;
+  }
+}
+
+/* samsung galaxy fold */
+
+@media screen and (max-width: 653px) {
+  .icon-parent-div {
+    gap: 30px !important;
+    margin: 0%;
+  }
+
+  .tool-icon {
+    width: 40px; /* Adjust the width and height as needed */
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .contact__info {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
+}
+
+/*for small devices */
+
+@media screen and (min-width: 350px) {
+}

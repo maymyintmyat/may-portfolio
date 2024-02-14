@@ -143,7 +143,7 @@ const MyProjects = () => {
             <button className="button">
               <a
                 className="button-content"
-                href="https://www.maymyintmyat.com/"
+                href="https://foodie-app-khaki.vercel.app/"
                 style={{ color: "white", textDecoration: "none" }}>
                 See Demo
               </a>
@@ -157,20 +157,18 @@ const MyProjects = () => {
               </a>
             </button>
             <p className="project__details">
-              After four months of dedication, collaboration with my teacher and{" "}
+              Foodie POS is a collaboration with my teacher and <br />
+              classmates, for restaurants. <br />
+              It's a QR code ordering system using Next JS.
               <br />
-              classmates, we proudly present our first POS software for foodies{" "}
+              Through a journey of learning backend development,
               <br />
-              with QR code ordering system using Next JS.
-              <br />
-              Through a journey of learning backend development, database
-              <br />
-              management, server integration, and app deployment
+              database management, server integration, and app deployment
               <br /> on hosting sites, we overcame challenges to create an
               efficient <br />
               and user-friendly solution. <br />
-              This experience not only honed our technical skills
-              <br /> but also cultivated teamwork and perseverance.
+              This experience not only honed our technical skills but
+              <br /> also cultivated teamwork and perseverance.
             </p>
           </div>
         </div>

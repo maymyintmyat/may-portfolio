@@ -157,7 +157,29 @@ const MyProjects = () => {
               </a>
             </button>
             <p className="project__details">
-              Foodie POS is a collaboration with my teacher and <br />
+              Foodie POS was my final collaborative project with my teacher and
+              classmates, designed for restaurants to streamline the ordering
+              process. <br /> The system features an easy-to-use back office for
+              restaurant owners and chefs to manage orders, along with a
+              convenient QR code-based ordering system for customers. <br />
+              Additional features include support for add-on topics and tracking
+              customer favorites with customizable quantities. <br /> The
+              project was built using React and Next.js, with deployment on
+              Vercel for efficient hosting. For data storage, we utilized
+              DigitalOcean Spaces, while the interface design leveraged MUI, a
+              robust React component library. <br /> The backend infrastructure
+              was powered by PostgreSQL, ensuring reliable database management.{" "}
+              <br /> This journey was a deep dive into backend development,
+              database management, server integration, and app deployment, where
+              we overcame technical challenges to deliver a functional,
+              efficient, and user-friendly solution. <br /> Beyond the technical
+              achievements, this experience significantly enhanced my teamwork,
+              problem-solving, and perseverance, leaving me better prepared for
+              future endeavors in technology and collaborative projects.{" "}
+            </p>
+
+            {/* Foodie POS is a final
+              project with my teacher and <br />
               classmates, for restaurants. <br />
               It's a QR code ordering system using Next JS.
               <br />
@@ -169,7 +191,7 @@ const MyProjects = () => {
               and user-friendly solution. <br />
               This experience not only honed our technical skills but
               <br /> also cultivated teamwork and perseverance.
-            </p>
+            </p> */}
           </div>
         </div>
 

@@ -55,7 +55,8 @@ const AboutMe = () => {
           ✔ MSquare Full-Stack Developer Course <br /> ✔ Foundations of User
           Experience (UX) Design by Google <br /> ✔ Start the UX Design Process:
           Empathize, Define, and Ideate by Google <br /> ✔ Build Wireframes and
-          Low-Fidelity Prototypes by Google <br /> ✔ Harvard CS50 (2024)
+          Low-Fidelity Prototypes by Google <br /> ✔ HTML, CSS, and Javascript
+          for Web Developers by Johns Hopkins University
         </p>
       </div>
     </div>

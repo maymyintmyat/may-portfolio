@@ -139,40 +139,49 @@ const MyProjects = () => {
             <img src={foodie} alt="" className="projectImg" />
           </div>
           <div>
-            <h3>Foodie POS</h3>
-            <button className="button">
-              <a
-                className="button-content"
-                href="https://foodie-app-khaki.vercel.app/"
-                style={{ color: "white", textDecoration: "none" }}>
-                See Demo
-              </a>
-            </button>
-            <button className="button">
-              <a
-                className="button-content"
-                href="https://github.com/maymyintmyat/foodie-app"
-                style={{ color: "white", textDecoration: "none" }}>
-                Code
-              </a>
-            </button>
+            <div className="TtoB">
+              <h3>Foodie POS</h3>
+              <button className="button">
+                <a
+                  className="button-content"
+                  href="https://foodie-app-khaki.vercel.app/"
+                  style={{ color: "white", textDecoration: "none" }}>
+                  See Demo
+                </a>
+              </button>
+              <button className="button">
+                <a
+                  className="button-content"
+                  href="https://github.com/maymyintmyat/foodie-app"
+                  style={{ color: "white", textDecoration: "none" }}>
+                  Code
+                </a>
+              </button>
+            </div>
             <p className="project__details">
-              Foodie POS was my final collaborative project with my teacher and
-              classmates, designed for restaurants to streamline the ordering
-              process. <br /> The system features an easy-to-use back office for
-              restaurant owners and chefs to manage orders, along with a
-              convenient QR code-based ordering system for customers. <br />
-              Additional features include support for add-on topics and tracking
-              customer favorites with customizable quantities. <br /> The
-              project was built using React and Next.js, with deployment on
-              Vercel for efficient hosting. For data storage, we utilized
-              DigitalOcean Spaces, while the interface design leveraged MUI, a
+              <strong>Foodie POS</strong> was my final collaborative project
+              with my teacher and classmates, designed for restaurants to
+              streamline the ordering process. <br /> The system features an
+              easy-to-use <strong>Back office</strong> for restaurant owners and
+              chefs to manage orders, along with a convenient{" "}
+              <strong>QR code-based ordering system</strong> for customers.{" "}
+              <br />
+              Additional features include support for{" "}
+              <strong>add-on topics</strong> and tracking customer favorites
+              with customizable quantities. <br /> The project was built using
+              <strong>React</strong> and <strong>Next.js</strong>, with
+              deployment on <strong>Vercel</strong> for efficient hosting. For
+              data storage, we utilized <strong>DigitalOcean Spaces</strong>,
+              while the interface design leveraged <strong>MUI</strong>, a
               robust React component library. <br /> The backend infrastructure
-              was powered by PostgreSQL, ensuring reliable database management.{" "}
-              <br /> This journey was a deep dive into backend development,
-              database management, server integration, and app deployment, where
-              we overcame technical challenges to deliver a functional,
-              efficient, and user-friendly solution. <br /> Beyond the technical
+              was powered by <strong>PostgreSQL</strong>, ensuring reliable
+              database management. <br /> It features a{" "}
+              <strong>Google Cloud-powered login system </strong>that allows
+              users to sign in seamlessly using their Gmail accounts. <br />
+              This journey was a deep dive into backend development, database
+              management, server integration, and app deployment, where we
+              overcame technical challenges to deliver a functional, efficient,
+              and user-friendly solution. <br /> Beyond the technical
               achievements, this experience significantly enhanced my teamwork,
               problem-solving, and perseverance, leaving me better prepared for
               future endeavors in technology and collaborative projects.{" "}
@@ -200,30 +209,41 @@ const MyProjects = () => {
             <img src={cafe} alt="" className="projectImg" />
           </div>
           <div>
-            <h3>Cafe La Vie</h3>
-            <button className="button">
-              <a
-                className="button-content"
-                href="https://next-cafe-app.vercel.app/"
-                style={{ color: "white", textDecoration: "none" }}>
-                See Demo
-              </a>
-            </button>
-            <button className="button">
-              <a
-                className="button-content"
-                href="https://github.com/maymyintmyat/next-cafe-app"
-                style={{ color: "white", textDecoration: "none" }}>
-                Code
-              </a>
-            </button>
+            <div className="TtoB">
+              <h3>Cafe La Vie</h3>
+              <button className="button">
+                <a
+                  className="button-content"
+                  href="https://next-cafe-app.vercel.app/"
+                  style={{ color: "white", textDecoration: "none" }}>
+                  See Demo
+                </a>
+              </button>
+              <button className="button">
+                <a
+                  className="button-content"
+                  href="https://github.com/maymyintmyat/next-cafe-app"
+                  style={{ color: "white", textDecoration: "none" }}>
+                  Code
+                </a>
+              </button>
+            </div>
             <p className="project__details">
-              This is my second major project working powered by Next.js
-              <br />
-              (a little bit similar with Foodie POS). <br />
-              Explore my website for recommended menus, <br />
-              services, and heartfelt customer reviews <br />
-              and I also create my own logo design icon.
+              <strong>Cafe La Vie</strong> is my second major project, created
+              with a friend and built using Next.js.(a little bit similar with
+              Foodie POS). <br />
+              The website features recommended menus, helpful services, and
+              genuine customer reviews, along with a logo icon I designed
+              myself. <br />
+              It also includes a simple and secure login system powered by
+              Google Cloud, so users can easily sign in with their Gmail
+              accounts. <br />
+              We added a back office for restaurant management and a QR code
+              ordering system to make things easier for both staff and
+              customers. <br />
+              This project was a great chance to improve my technical skills
+              while exploring creative design and building solutions that people
+              enjoy using.
             </p>
           </div>
         </div>

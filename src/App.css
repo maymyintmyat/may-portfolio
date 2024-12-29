@@ -179,10 +179,17 @@ code {
 }
 
 .project__details {
+  /* background-color: black; */
+  margin: 0 auto;
   color: #888888;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  padding: 20px 40px;
+}
+
+.TtoB {
+  padding: 0 40px;
 }
 
 /* ---------------contact------------*/
